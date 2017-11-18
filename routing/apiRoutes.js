@@ -8,46 +8,6 @@ module.exports = function(app) {
 
 	app.post("/api/friends", function(req, res) {
 
-// 		var findMatch = {
-// 			name: "",
-// 			photo: "",
-// 			friendDifference: 1000
-// 		};
-
-// 		var userData = req.body;
-// 		// var userName = userData.name;
-// 		// var userPhoto = userData.photo;
-// 		// var userScores = userData.scores;
-
-// 		var totalDifference = 0;
-
-// 		//loop to get each survey taker's score
-// 		for (var i = 0; i < friendsData.length - 1; i++) {
-// 			console.log(friends[i].name);
-// 			totalDifference = 0;
-
-// 			//loop through that friends score and user's score
-// 			for (var j = 0; j < 10; j++) {
-// 				//calculate the difference between the scores and sum them into the totalDifference
-// 				totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-// 				//if the sum of differences is less then the differences of the most current match
-// 				if (totalDifference <= bestMatch.friendDifference) {
-
-// 					//change the bestMatch to be the new calculated friend
-// 					bestMatch.name = friends[i].name;
-// 					bestMatch.photo = friends[i].photo;
-// 					bestMatch.friendDifference = totalDifference;
-// 				}
-// 			}
-// 		}
-
-// 		//save the user's data to the database
-// 		friends.push(userData);
-
-// 		//return a JSON with the user's bestMatch in the html page
-// 		res.json(bestMatch);
-// 	});
-// };
 		var userInfo = req.body;
 
 		var userAnswers = userInfo.scores;
